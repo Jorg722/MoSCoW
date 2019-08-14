@@ -2,6 +2,10 @@
 
 Présentation sur MoSCoW en Reveal.js
 
+## Comment lire la présentation
+
+Récupérer le dépôt via github (https://github.com/Jorg722/MoSCoW) et ouvrer la page index.html dans votre navigateur préféré =)
+
 ## License
 
 Licence Creative Commons CC-BY-ND-SA
