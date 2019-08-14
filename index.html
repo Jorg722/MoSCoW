@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title>reveal.js</title>
+		
+		<meta name="description" content="Présentation de MoSCoW avec reveal.js">
+		<meta name="author" content="Jimmy RUNDSTADLER">
+		<title>MoSCoW</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -12,6 +14,27 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Custom style -->
+		<style type="text/css">
+			#footer {
+				position: absolute;
+				bottom: 0%;
+				left: 1%;
+			}
+			#createdBy {
+				position: absolute;
+				bottom: 0%;
+				left: 50%;
+				transform: translate(-50%, 0%);
+			}
+			p{
+				font-size: smaller;
+			}
+			ul, li{
+				text-align: justify;
+			}
+		</style>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,8 +48,68 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- Page de garde-->
+				<section>
+					<h3>Garder une marge de manœuvre avec</h3>
+					<h1>MoSCoW</h1>
+				</section>
+				<!-- Présentation de la méthodologie -->
+				<section>
+					<h3>MoSCoW c'est quoi ?</h3>
+					<p>
+						MoSCoW est une méthodologie :
+						<small>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">Permettant de définir le niveau de priorité des tâches ou des besoins</li>
+							<li class="fragment fade-in-then-semi-out">Qui a pour unique but de faciliter la prise de décision</li>
+							<li class="fragment fade-in-then-semi-out">Principalement utilisée pour l'assistance à maitrise d'ouvrage et le développement logiciel</li>
+							<li class="fragment fade-in-then-semi-out">Qui prend tout son sens dans un environnement contraint par des délais</li>
+							<li class="fragment fade-in-then-semi-out">Dont les coûts de mise en place et d'apprentissage sont quasi inexistants (la preuve en est, à la fin de cette présentation, vous maitriserez MoSCoW)</li>
+						</ul>
+					</small>
+					</p>
+				</section>
+				<!-- Méthodologie en détail -->
+				<section>
+					<h3>Un acronyme qui veut dire quoi ?</h3>
+					<p>
+						Dans MoSCoW, les o ne servent qu'à rendre l'acronyme lisible.
+						<small>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">M : Must have (doit être fait)</li>
+							<li class="fragment fade-in-then-semi-out">S : Should have (devrait être fait dans la mesure du possible)</li>
+							<li class="fragment fade-in-then-semi-out">C : Could have (pourrait être fait si cela n'impacte pas d'autres tâches plus prioritaires)</li>
+							<li class="fragment fade-in-then-semi-out">W : Won't have this time, Would like ou Wished (pas pour cette fois sauf si on trouve du temps pour le faire / souhaité)</li>
+						</ul>
+					</small></p>
+				</section>
+				<!-- Application de la méthodologie -->
+				<section>
+					<h3>Et concrétement ?</h3>
+					<p>Vous avez compris le principe ?
+						<small>
+						<ul>
+							<li class="fragment fade-in-then-semi-out">S'applique parfaitement dans un cadre agile (Scrum par exemple) pour prioriser les tâches du sprint et avoir une marge de manoeuvre permettant de respecter au mieux le contrat du sprint</li>
+							<li class="fragment fade-in-then-semi-out">Si le contrat du sprint est menacé, MoSCoW permet de prendre une décision facilement</li>
+							<li class="fragment fade-in-then-semi-out">On connait dès le début du sprint sur quelles tâches concentrer les efforts de l'équipe</li>
+							<li class="fragment fade-in-then-semi-out">En cas de contrat menacé, on éjecte les W, puis C, puis S, puis M</li>
+							<li class="fragment fade-in-then-semi-out">Pour se garder une marge de manoeuvre correcte, la pratique est de prévoir 50% de Must maximum, au-delà, on considère qu'un risque de surcharge voire un risque budgétaire est présent</li>
+						</ul>
+					</small></p>
+				</section>
+				<!-- Remerciements / Questions -->
+				<section>
+					<h3>Merci de votre attention</h3>
+					<p>Des questions ?</p>
+				</section>
+			</div>
+			<div id="footer">
+				<p><small>
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+				</small></p>
+			</div>
+			<div id="createdBy">
+				<small><small>Créée par Jimmy RUNDSTADLER</small></small>
 			</div>
 		</div>
 
@@ -37,6 +120,14 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+
+				// Custom config
+				transition: 'convex',
+				controlsTutorial: true,
+				mouseWheel: true,
+				hideCursorTime: 2000,
+				pdfSeparateFragments: false,
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
