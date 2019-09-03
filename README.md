@@ -4,7 +4,7 @@ Présentation sur MoSCoW en Reveal.js
 
 ## Comment lire la présentation
 
-Récupérer le dépôt via github (https://github.com/Jorg722/MoSCoW) et ouvrer la page index.html dans votre navigateur préféré =)
+Récupérer le dépôt via github (https://github.com/Jorg722/MoSCoW) et ouvrez la page index.html dans votre navigateur préféré =)
 
 ## License
 
