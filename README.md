@@ -8,7 +8,7 @@ Récupérer le dépôt via github (https://github.com/Jorg722/MoSCoW) et ouvrez 
 
 ## License
 
-Licence Creative Commons CC-BY-ND-SA
+Licence Creative Commons CC-BY-NC-SA
 
 Ce(tte) œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International.
 
